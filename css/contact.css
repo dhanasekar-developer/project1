@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(253, 252, 252);
+    flex-wrap: wrap;
+    overflow-x: hidden;
+
+}
+
+
+.contactbackground {
+    background-image: url("../images/background15.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+
+}
+
+.contactbackground>.contact_h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    padding: 50px 0px 180px 0px;
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 2px 3px 5px #333, -2px -3px 5px #333;
+}
+
+@media all and (max-width: 900px) {
+    .contactbackground {
+        background-image: url("../images/background9.jpg");
+    }
+}
+
+@media all and (max-width: 700px) {
+    .contactbackground {
+        background-image: url("../images/background6.jpg");
+    }
+}
+
+@media all and (max-width: 550px) {
+    .contactbackground {
+        background-image: url("../images/background10.jpg");
+    }
+}
+
+.feedback {
+    margin: 50px;
+    border: 1px solid hidden;
+    display: inline;
+}
+
+.feedback>h1 {
+    font-size: 2rem;
+    margin: 0px 20px;
+    font-family: 'Righteous', cursive;
+    color: #333;
+}
+
+.feedback>.input1 {
+    height: 150px;
+    width: 500px;
+    margin: 10px 20px 20px 20px;
+    font-family: 'Kulim Park', sans-serif;
+    border: 2px solid #e0dcdc;
+    font-size: 1.2rem;
+}
+
+.feedback>.input2,
+.input3 {
+    height: 40px;
+    width: 225px;
+    margin: 20px;
+    font-family: 'Kulim Park', sans-serif;
+    border: 2px solid #e0dcdc;
+    font-size: 1.1rem;
+}
+
+.feedback>.input4 {
+    height: 40px;
+    width: 500px;
+    margin: 20px;
+    font-family: 'Kulim Park', sans-serif;
+    border: 2px solid #e0dcdc;
+    font-size: 1.1rem;
+}
+
+.feedback>.sendbtn>button {
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    font-family: 'Bree Serif', serif;
+    border: 2px solid #adabab;
+    font-size: 1.4rem;
+    color: #545252;
+    font-weight: 100;
+    transition: .5s;
+
+}
+
+.feedback>.sendbtn>button:hover
+{
+    background: rgb(241, 63, 63);
+    color: #000;
+}
+
+.feedback>button:hover {
+    background-color: rgb(248, 186, 186);
+    border: 2px solid #aba8a8;
+}
+@media all and (max-width: 560px)
+{
+    .feedback>.input1
+    {
+        width:400px;
+        height: 100px;
+    }.feedback>.input2
+    {
+        width:400px;
+    
+    }.feedback>.input3
+    {
+        width:400px;
+        
+    }
+    .feedback>.input4
+    {
+        width:400px;
+    
+    }
+}

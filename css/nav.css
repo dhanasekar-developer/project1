@@ -1,0 +1,120 @@
+.name {
+    display: flex;
+    align-items: center;
+
+}
+
+.name>h1 {
+    color: aliceblue;
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    height: 90px;
+    background: #000;
+    width: 100%;
+
+}
+
+.nav {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav>ul {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    color: #fff;
+    font-size: 1.1rem;
+    position: relative;
+
+}
+
+.nav ul li a:after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: .5s;
+
+}
+
+.nav ul li a:hover::after {
+    width: 80%;
+}
+
+.navbtn {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbtn>button {
+    height: 100%;
+    width: 170px;
+    font-size: 1.1rem;
+    background: #446BC6;
+    border: none;
+}
+.navbtn>button:hover{
+    background: #597ed4;
+}
+
+@media all and (max-width: 920px) {
+    .navbar {
+        flex-direction: column;
+        height: 155px;
+    }
+
+    .nav {
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .nav {
+        flex-direction: column;
+
+    }
+
+    .nav>ul {
+        justify-content: center;
+    }
+
+    .navbar {
+        height: 100%;
+    }
+
+    .navbtn {
+        height: 45px;
+        justify-content: center;
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    .nav>ul {
+        flex-direction: column;
+
+
+    }
+}

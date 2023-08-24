@@ -1,0 +1,733 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(253, 252, 252);
+    flex-wrap: wrap;
+    overflow-x: hidden;
+
+}
+
+
+.homebackground {
+    background-image: url("../images/background9.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: auto;
+
+}
+
+.homebackground>.home_h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    padding: 100px 20px 0px 20px;
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 2px 3px 5px #333,-2px -3px 5px #333;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 400px;
+    padding-bottom: 20px;
+
+
+}
+
+label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Bree Serif', serif;
+
+}
+
+input[type="date"] {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: normal;
+    font-family: 'Bree Serif', serif;
+}
+
+input[type="date"]:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+select {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: normal;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.searchbtn {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border: none;
+    font-family: 'Bree Serif', serif;
+}
+.optionbtn
+{
+    color:#000;
+}
+
+@media all and (max-width: 1130px) {
+    .homebackground>.home_h1 {
+        font-size: 3rem;
+        padding-top: 30px;
+
+    }
+
+    .homebackground {
+        background-image: url("../images/background6.jpg");
+        height: auto;
+
+    }
+
+    .homebackground>.form {
+        padding-top: 80px;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+}
+
+@media all and (max-width: 1100px) {
+    .homebackground>.home_h1 {
+        font-size: 2.5rem;
+        top: 40px
+    }
+
+    .homebackground {
+        background-image: url("../images/background10.jpg");
+        height: auto;
+    }
+
+
+}
+
+@media all and (max-width: 950px) {
+    .homebackground>.home_h1 {
+        font-size: 2.5rem;
+        top: 30px
+    }
+
+    .homebackground {
+        background-image: url("../images/background11.jpg");
+
+        height: auto;
+    }
+
+
+}
+
+@media all and (max-width: 750px) {
+    .homebackground>.home_h1 {
+        font-size: 2rem;
+        top: 20px
+    }
+
+    .homebackground {
+        background-image: url("../images/background12.jpg");
+
+        height: auto;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+    .homebackground {
+        background-image: url("../images/background12.jpg");
+        height: auto;
+    }
+
+    .homebackground>.home_h1 {
+        font-size: 2rem;
+        top: 20px
+    }
+
+    .homebackground>.form {
+        padding-top: 50px;
+    }
+
+}
+
+@media all and (max-width: 560px) {
+    .homebackground {
+        background-image: url("../images/background13.jpg");
+        height: auto;
+    }
+
+    .homebackground>.home_h1 {
+        font-size: 2rem;
+        top: 20px
+    }
+
+    .homebackground>.form {
+        padding-top: 50px;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+    .homebackground {
+        background-image: url("../images/background14.jpg");
+        height: auto;
+    }
+
+    .homebackground>.home_h1 {
+        font-size: 2rem;
+        top: 20px
+    }
+
+    .form {
+        padding-top: 50px;
+    }
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.info>.img1 {
+    width: 400px;
+    height: 400px;
+    padding: 60px 10px;
+}
+
+.img1>img {
+    width: 100%;
+    height: auto;
+}
+
+.info>.img2 {
+    width: 400px;
+    height: 400px;
+    padding: 60px 10px;
+}
+
+.img2>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.info>.content {
+    width: 400px;
+    height: 400px;
+    padding: 60px 10px;
+
+}
+
+.info>.content>h2 {
+    font-family: 'Carter One', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: justify;
+
+}
+
+.info>.content>p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+@media all and (max-width: 1260px) {
+    .info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .img1,
+    .img2,
+    .content {
+        justify-content: center;
+    }
+}
+
+.homerooms {}
+
+.rooms>.roomcnt {
+    height: auto;
+    width: 100%;
+
+}
+
+.roomcnt {
+
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.roomcnt>h2 {
+    font-size: 2rem;
+    font-family: 'Carter One', cursive;
+}
+
+.roomcnt>p {
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
+    width: 400px;
+    text-align: center;
+}
+
+.roomimg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.roomimg>.room1 {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.room1>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.overlay1 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+
+.overlay1>h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    transition: .5s;
+}
+
+.overlay1>h2:hover {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
+
+
+}
+
+.roomimg>.room2 {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+}
+
+.room2>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.overlay2 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+
+.overlay2>h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    transition: .5s;
+}
+
+.overlay2>h2:hover {
+    color: rgb(249, 4, 4);
+    text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
+
+}
+
+.roomimg>.room3 {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+}
+
+.room3>img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    line-height: 20px;
+}
+
+.overlay3>h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    transition: .5s;
+}
+
+.overlay3>h2:hover {
+    color: rgb(250, 2, 2);
+    text-shadow: 1px 1px 3px #000000, -1px -1px 3px #000000;
+
+}
+
+
+@media all and (max-width: 1260px) {
+
+    .homerooms>.roomimg {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.midcnt>p {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 50px 50px;
+    font-family: 'Righteous', cursive;
+}
+
+@media all and (max-width: 650px) {
+    .midcnt>p {
+        font-size: 2rem;
+    }
+}
+
+.seasonal {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.seasonalimg {
+    width: 500px;
+    height: 500px;
+
+}
+
+.seasonalimg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.seasonalcnt {
+    width: 500px;
+    height: 500px;
+    background-color: #000000;
+    position: relative;
+
+}
+
+.seasonaloverlay {
+    position: absolute;
+    color: #fff;
+}
+
+.seasonaloverlay>h2 {
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.seasonaloverlay>p {
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
+    padding: 20px;
+    text-align: center;
+}
+
+@media all and (max-width: 900px) {
+    .seasonal {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 520px) {
+
+    .seasonal>.seasonalimg,
+    .seasonalcnt {
+        width: 380px;
+        height: 380px;
+
+    }
+
+    .seasonal>.seasonalcnt>.seasonaloverlay>h2 {
+        font-size: 2rem;
+    }
+}
+
+.food>.foodimg {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.food>h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Mirza', cursive;
+}
+
+.foodimg1 {
+    width: 400px;
+    height: 400px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.foodimg1>img {
+    height: 100%;
+    width: 100%;
+}
+
+.foodoverlay1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0s;
+}
+
+.foodoverlay1:hover {
+    background: #000;
+    opacity: .8;
+}
+
+.foodoverlay1>* {
+    transform: translateY(230px);
+    transition: transform 1s;
+}
+
+.foodoverlay1:hover>* {
+    transform: translateY(0px);
+    background: #000;
+}
+
+.foodoverlay1>h2 {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    color: rgb(210, 208, 208);
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+}
+
+.foodoverlay1>p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Concert One', cursive;
+    color: #fff;
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+}
+
+.foodimg2 {
+    width: 400px;
+    height: 400px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.foodimg2>img {
+    height: 100%;
+    width: 100%;
+}
+
+.foodoverlay2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.foodoverlay2>h2 {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    color: rgb(210, 208, 208);
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+
+}
+
+.foodoverlay2>p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Concert One', cursive;
+    color: #fff;
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+
+}
+
+.foodoverlay2:hover {
+    background: #000;
+    opacity: .8;
+}
+
+.foodoverlay2>* {
+    transform: translateY(230px);
+    transition: transform 1s;
+
+}
+
+.foodoverlay2:hover>* {
+    transform: translateY(0px);
+
+}
+
+.foodimg3 {
+    width: 400px;
+    height: 400px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.foodimg3>img {
+    height: 100%;
+    width: 100%;
+}
+
+.foodoverlay3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.foodoverlay3>h2 {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-weight: 400;
+    color: rgb(210, 208, 208);
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+}
+
+
+
+.foodoverlay3>p {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Concert One', cursive;
+    color: #fff;
+    text-shadow: 2px 3px 5px #000, -2px -3px 5px #000;
+}
+
+.foodoverlay3:hover {
+    background: #000;
+    opacity: .7;
+}
+
+.foodoverlay3>* {
+    transform: translateY(230px);
+    transition: transform 1s;
+
+}
+
+.foodoverlay3:hover>* {
+    transform: translateY(0px);
+
+}
+
+@media all and (max-width: 1260px) {
+    .food>.foodimg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
